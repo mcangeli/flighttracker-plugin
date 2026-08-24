@@ -3,6 +3,5 @@ from .data import FlightTrackerData
 from .renderer import FlightTrackerRenderer
 
 
-def load():
-    """Bullpen entrypoint hook."""
+def load() -> api.PLUGIN_DEFINITION:
     return FlightTrackerConfig, FlightTrackerData, FlightTrackerRenderer
