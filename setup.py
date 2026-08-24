@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="flighttracker",
-    version="0.1.0",
+    version="0.1.1",
     description="Overhead aircraft tracking plugin for MLB-LED-Scoreboard",
     packages=find_packages(),
     install_requires=[
