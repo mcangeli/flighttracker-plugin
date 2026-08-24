@@ -4,6 +4,7 @@ import math
 import requests
 import time
 
+from .config import Config
 
 class Data:
     def __init__(self, config):
