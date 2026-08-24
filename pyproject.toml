@@ -5,10 +5,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "flighttracker-plugin"
-version = "0.1.3"
+version = "0.1.4"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [project.entry-points.'bullpen.mlbled.plugin']
-"flighttracker" = "flighttracker:load"
+"flighttracker" = "flighttracker_plugin:load"
