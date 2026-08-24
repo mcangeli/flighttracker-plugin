@@ -1,7 +1,13 @@
 from PIL import Image, ImageDraw, ImageFont
 
+from bullpen.api import Layout, Color, PluginRenderer
+from bullpen.util import center_text_position, scrolling_text
+from bullpen.logging import LOGGER
 
-class FlightTrackerRenderer:
+from .config import Config
+from .data import Data
+
+class Renderer(PluginRenderer):
     def __init__(self, config, data):
         self.config = config
         self.data = data
