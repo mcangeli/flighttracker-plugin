@@ -1,1 +1,11 @@
+[build-system]
 
+[project]
+name = "flightracker"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.entry-points.'bullpen.mlbled.plugin']
+"flighttracker" = "flighttracker:load"
