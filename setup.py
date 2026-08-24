@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         "bullpen": [
-            "flighttracker = flighttracker_plugin:load",
+            "flighttracker = flighttracker:load",
         ],
     },
 )
