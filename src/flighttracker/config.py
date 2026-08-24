@@ -1,4 +1,6 @@
-class FlightTrackerConfig:
+import bullpen.api as api
+
+class Config(api.PluginConfig):
     def __init__(self, top_level_config, plugin_config):
         self.top_level = top_level_config
         self.plugin_config = plugin_config or {}
