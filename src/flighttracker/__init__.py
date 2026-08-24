@@ -1,8 +1,8 @@
 from bullpen import api
-from .config import FlightTrackerConfig
-from .data import FlightTrackerData
-from .renderer import FlightTrackerRenderer
+from .config import Config
+from .data import Data
+from .renderer import Renderer
 
 
 def load() -> api.PLUGIN_DEFINITION:
-    return FlightTrackerConfig, FlightTrackerData, FlightTrackerRenderer
+    return Config, Data, Renderer
