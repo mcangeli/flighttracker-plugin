@@ -1,9 +1,11 @@
+import bullpen.api as api
+
 import math
 import requests
 import time
 
 
-class FlightTrackerData:
+class Data:
     def __init__(self, config):
         self.config = config
         self.current_flight = None
